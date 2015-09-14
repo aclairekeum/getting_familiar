@@ -9,3 +9,7 @@
 
 2. Are there any obvious shortcomings of rosbag as a debugging tool?
 	* Matching up with the actual data(location) might not be precise.
+
+##### TF
+1. Does the new behavior make sense?
+	* We were able to visualize the robot's movement based on its starting point. 
