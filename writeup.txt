@@ -4,6 +4,8 @@
 
 ##### Rosbag
 1. How might rosbag fit into a debugging process as you work on projects in this class?
+	* Can replay the scenario where it had an error situation 
+	* Collects data that we can reference.
 
 2. Are there any obvious shortcomings of rosbag as a debugging tool?
-
+	* Matching up with the actual data(location) might not be precise.
