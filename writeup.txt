@@ -13,3 +13,11 @@
 ##### TF
 1. Does the new behavior make sense?
 	* We were able to visualize the robot's movement based on its starting point. 
+
+##### ROS callbacks and threading 
+1. What happens when you run this code?  What assumption can you safely make about any code that you put in a sensor callback?  In what ways might the behavior you observe be suboptimal when programming a robot? 
+
+	* When you add the sleep message you get every message but the queue of messages grows and grows and while you do read every message, you increasingly lag behind the messages coming in. This means you can safely assume that every message that you send will be received. This behavior may be suboptimal if you need to be assured some minimum lag time between when a message is sent and when it is received.
+
+2. What happens now?  In what scenarios is this behavior good? In what scenarios is this behavior bad?
+	*When you add a specific queue size, it will store only that many messages before starting to kick them out. This is good in cases where you want the receiver to not lag too far behind the sender (such as location information). This is bad in the case where you rely on always getting every message that is sent (such as sending a long continuous message in several pieces).
