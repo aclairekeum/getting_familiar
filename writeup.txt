@@ -1,0 +1,9 @@
+## Getting Familiar with ROS Assignment
+### Computational Robotics Class
+#### Members: Antonnia Elsen, Claire Keum, Thomas Nattestad 
+
+##### Rosbag
+1. How might rosbag fit into a debugging process as you work on projects in this class?
+
+2. Are there any obvious shortcomings of rosbag as a debugging tool?
+
